@@ -53,9 +53,7 @@
       box-shadow: 0 2px 12px rgba(26,58,107,0.25);
       position: sticky; top: 0; z-index: 100;
     }
-    .logo {
-      display: flex; align-items: center; gap: 10px;
-    }
+    .logo { display: flex; align-items: center; gap: 10px; }
     .logo-icon {
       width: 36px; height: 36px;
       background: var(--blue-bright);
@@ -66,13 +64,8 @@
     }
     .logo-text { font-size: 18px; font-weight: 700; letter-spacing: -0.3px; }
     .logo-sub { font-size: 12px; font-weight: 300; opacity: 0.7; }
-
-    .header-stats {
-      display: flex; gap: 20px; align-items: center;
-    }
-    .stat-item {
-      text-align: center;
-    }
+    .header-stats { display: flex; gap: 20px; align-items: center; }
+    .stat-item { text-align: center; }
     .stat-num { font-size: 16px; font-weight: 700; color: var(--blue-light); }
     .stat-label { font-size: 10px; opacity: 0.6; text-transform: uppercase; letter-spacing: 0.5px; }
 
@@ -101,9 +94,6 @@
       align-items: center; justify-content: center;
       gap: 12px; z-index: 999;
     }
-    .error-icon { font-size: 48px; }
-    .error-text { color: var(--red); font-weight: 600; font-size: 16px; }
-    .error-sub { color: var(--gray-500); font-size: 13px; }
 
     /* ─── MAIN LAYOUT ─── */
     main {
@@ -118,14 +108,8 @@
     }
 
     /* ─── CONTROLS ─── */
-    .controls-row {
-      display: flex; gap: 10px; flex-wrap: wrap; align-items: center;
-    }
-
-    /* HSK selector */
-    .hsk-tabs {
-      display: flex; gap: 6px; flex-wrap: wrap;
-    }
+    .controls-row { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; }
+    .hsk-tabs { display: flex; gap: 6px; flex-wrap: wrap; }
     .hsk-tab {
       padding: 7px 16px;
       border-radius: 24px;
@@ -139,13 +123,10 @@
     }
     .hsk-tab:hover { border-color: var(--blue-mid); background: var(--blue-pale); }
     .hsk-tab.active {
-      background: var(--blue-mid);
-      border-color: var(--blue-mid);
-      color: #fff;
-      box-shadow: 0 2px 8px rgba(37,99,235,0.25);
+      background: var(--blue-mid); border-color: var(--blue-mid);
+      color: #fff; box-shadow: 0 2px 8px rgba(37,99,235,0.25);
     }
 
-    /* Mode toggle */
     .mode-toggle {
       display: flex;
       background: var(--white);
@@ -156,27 +137,20 @@
     }
     .mode-btn {
       padding: 7px 20px;
-      border: none;
-      background: transparent;
+      border: none; background: transparent;
       font-family: 'Be Vietnam Pro', sans-serif;
       font-size: 13px; font-weight: 600;
-      color: var(--blue-mid);
-      cursor: pointer;
+      color: var(--blue-mid); cursor: pointer;
       transition: all 0.18s;
     }
-    .mode-btn.active {
-      background: var(--blue-mid);
-      color: #fff;
-    }
+    .mode-btn.active { background: var(--blue-mid); color: #fff; }
 
-    /* Search */
     .search-bar {
       display: flex; align-items: center;
       background: var(--white);
       border: 2px solid var(--blue-light);
       border-radius: var(--radius-sm);
-      padding: 8px 14px;
-      gap: 8px;
+      padding: 8px 14px; gap: 8px;
       flex: 1; min-width: 200px;
       transition: border-color 0.18s;
     }
@@ -189,7 +163,6 @@
     }
     .search-icon { color: var(--gray-300); font-size: 16px; }
 
-    /* Progress bar */
     .progress-wrap {
       background: var(--white);
       border-radius: var(--radius);
@@ -198,286 +171,298 @@
       display: flex; align-items: center; gap: 14px;
     }
     .progress-label { font-size: 13px; color: var(--gray-500); white-space: nowrap; }
-    .progress-track {
-      flex: 1; height: 8px;
-      background: var(--gray-100);
-      border-radius: 99px; overflow: hidden;
-    }
+    .progress-track { flex: 1; height: 8px; background: var(--gray-100); border-radius: 99px; overflow: hidden; }
     .progress-fill {
       height: 100%;
       background: linear-gradient(90deg, var(--blue-bright), var(--blue-mid));
-      border-radius: 99px;
-      transition: width 0.4s ease;
+      border-radius: 99px; transition: width 0.4s ease;
     }
     .progress-count { font-size: 13px; font-weight: 600; color: var(--blue-mid); white-space: nowrap; }
 
-    /* ─── FLASHCARD MODE ─── */
+    /* ─── FLASHCARD ─── */
     #flashcardMode { display: flex; flex-direction: column; gap: 16px; }
-
-    .card-controls {
-      display: flex; align-items: center; gap: 10px; justify-content: center;
-    }
+    .card-controls { display: flex; align-items: center; gap: 10px; justify-content: center; }
     .card-btn {
-      width: 44px; height: 44px;
-      border-radius: 50%;
+      width: 44px; height: 44px; border-radius: 50%;
       border: 2px solid var(--blue-light);
-      background: var(--white);
-      color: var(--blue-mid);
+      background: var(--white); color: var(--blue-mid);
       font-size: 18px; cursor: pointer;
       display: flex; align-items: center; justify-content: center;
-      transition: all 0.18s;
-      box-shadow: var(--shadow-sm);
+      transition: all 0.18s; box-shadow: var(--shadow-sm);
     }
-    .card-btn:hover:not(:disabled) {
-      background: var(--blue-mid); color: #fff;
-      border-color: var(--blue-mid);
-      box-shadow: var(--shadow-md);
-    }
+    .card-btn:hover:not(:disabled) { background: var(--blue-mid); color: #fff; border-color: var(--blue-mid); box-shadow: var(--shadow-md); }
     .card-btn:disabled { opacity: 0.35; cursor: not-allowed; }
-    .card-counter {
-      font-size: 14px; font-weight: 600; color: var(--gray-500);
-      min-width: 70px; text-align: center;
-    }
+    .card-counter { font-size: 14px; font-weight: 600; color: var(--gray-500); min-width: 70px; text-align: center; }
 
-    /* Flashcard flip */
-    .card-scene {
-      perspective: 1000px;
-      width: 100%; max-width: 580px;
-      height: 320px;
-      margin: 0 auto;
-      cursor: pointer;
-    }
-    .card-inner {
-      width: 100%; height: 100%;
-      position: relative;
-      transform-style: preserve-3d;
-      transition: transform 0.55s cubic-bezier(.4,0,.2,1);
-    }
+    .card-scene { perspective: 1000px; width: 100%; max-width: 580px; height: 320px; margin: 0 auto; cursor: pointer; }
+    .card-inner { width: 100%; height: 100%; position: relative; transform-style: preserve-3d; transition: transform 0.55s cubic-bezier(.4,0,.2,1); }
     .card-scene.flipped .card-inner { transform: rotateY(180deg); }
 
     .card-face {
-      position: absolute; inset: 0;
-      backface-visibility: hidden;
-      border-radius: var(--radius);
-      padding: 32px;
+      position: absolute; inset: 0; backface-visibility: hidden;
+      border-radius: var(--radius); padding: 32px;
       display: flex; flex-direction: column;
-      align-items: center; justify-content: center;
-      gap: 10px;
+      align-items: center; justify-content: center; gap: 10px;
       box-shadow: var(--shadow-lg);
     }
-    .card-front {
-      background: linear-gradient(135deg, var(--blue-deep) 0%, #1e4ba8 100%);
-      color: #fff;
-    }
-    .card-back {
-      background: var(--white);
-      transform: rotateY(180deg);
-      color: var(--gray-900);
-    }
+    .card-front { background: linear-gradient(135deg, var(--blue-deep) 0%, #1e4ba8 100%); color: #fff; }
+    .card-back { background: var(--white); transform: rotateY(180deg); color: var(--gray-900); }
 
     .card-hsk-badge {
       position: absolute; top: 16px; left: 16px;
-      background: rgba(255,255,255,0.15);
-      color: rgba(255,255,255,0.9);
+      background: rgba(255,255,255,0.15); color: rgba(255,255,255,0.9);
       font-size: 11px; font-weight: 700;
-      padding: 3px 10px; border-radius: 99px;
-      letter-spacing: 0.5px;
+      padding: 3px 10px; border-radius: 99px; letter-spacing: 0.5px;
     }
-    .card-back .card-hsk-badge {
-      background: var(--blue-pale);
-      color: var(--blue-mid);
-    }
-
-    .card-flip-hint {
-      position: absolute; bottom: 14px; right: 16px;
-      font-size: 11px; opacity: 0.5;
-      display: flex; align-items: center; gap: 4px;
-    }
+    .card-back .card-hsk-badge { background: var(--blue-pale); color: var(--blue-mid); }
+    .card-flip-hint { position: absolute; bottom: 14px; right: 16px; font-size: 11px; opacity: 0.5; display: flex; align-items: center; gap: 4px; }
 
     .hanzi { font-family: 'Noto Serif SC', serif; font-size: 64px; font-weight: 700; line-height: 1; }
     .pinyin { font-size: 20px; letter-spacing: 0.5px; opacity: 0.85; }
     .card-front .pinyin { color: var(--blue-light); }
     .card-back .pinyin { color: var(--blue-mid); }
-
-    .meaning {
-      font-size: 22px; font-weight: 600; color: var(--gray-900);
-      text-align: center;
-    }
-    .example-block {
-      margin-top: 8px; text-align: center;
-      border-top: 1px solid var(--gray-100);
-      padding-top: 12px; width: 100%;
-    }
-    .example-han {
-      font-family: 'Noto Serif SC', serif;
-      font-size: 16px; color: var(--blue-mid); font-weight: 500;
-    }
+    .meaning { font-size: 22px; font-weight: 600; color: var(--gray-900); text-align: center; }
+    .example-block { margin-top: 8px; text-align: center; border-top: 1px solid var(--gray-100); padding-top: 12px; width: 100%; }
+    .example-han { font-family: 'Noto Serif SC', serif; font-size: 16px; color: var(--blue-mid); font-weight: 500; }
     .example-pinyin { font-size: 12px; color: var(--gray-500); margin: 2px 0; }
     .example-trans { font-size: 13px; color: var(--gray-700); font-style: italic; }
 
-    /* Card action buttons */
-    .card-actions {
-      display: flex; gap: 12px; justify-content: center;
-    }
+    .card-actions { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
     .action-btn {
       display: flex; align-items: center; gap: 6px;
-      padding: 10px 22px;
-      border-radius: 24px;
-      border: none;
+      padding: 10px 22px; border-radius: 24px; border: none;
       font-family: 'Be Vietnam Pro', sans-serif;
-      font-size: 14px; font-weight: 600;
-      cursor: pointer;
-      transition: all 0.18s;
-      box-shadow: var(--shadow-sm);
+      font-size: 14px; font-weight: 600; cursor: pointer;
+      transition: all 0.18s; box-shadow: var(--shadow-sm);
     }
-    .action-btn.shuffle {
-      background: var(--white); color: var(--blue-mid);
-      border: 2px solid var(--blue-light);
-    }
+    .action-btn.shuffle { background: var(--white); color: var(--blue-mid); border: 2px solid var(--blue-light); }
     .action-btn.shuffle:hover { background: var(--blue-pale); }
-    .action-btn.flip-btn {
-      background: var(--blue-mid); color: #fff;
-    }
+    .action-btn.flip-btn { background: var(--blue-mid); color: #fff; }
     .action-btn.flip-btn:hover { background: var(--blue-deep); }
 
-    /* ─── QUIZ MODE ─── */
+    /* ─── QUIZ TYPE SELECTOR ─── */
     #quizMode { display: flex; flex-direction: column; gap: 20px; display: none; }
 
-    .quiz-question-card {
+    .quiz-type-selector {
       background: var(--white);
       border-radius: var(--radius);
-      padding: 32px;
-      box-shadow: var(--shadow-md);
-      text-align: center;
-    }
-    .quiz-q-label {
-      font-size: 11px; font-weight: 700; letter-spacing: 1px;
-      text-transform: uppercase; color: var(--blue-bright);
-      margin-bottom: 16px;
-    }
-    .quiz-hanzi {
-      font-family: 'Noto Serif SC', serif;
-      font-size: 56px; font-weight: 700;
-      color: var(--blue-deep); line-height: 1;
-      margin-bottom: 8px;
-    }
-    .quiz-pinyin { font-size: 18px; color: var(--gray-500); }
-
-    .quiz-options {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 12px;
-    }
-    .quiz-option {
-      background: var(--white);
-      border: 2px solid var(--blue-light);
-      border-radius: var(--radius-sm);
-      padding: 16px 20px;
-      font-family: 'Be Vietnam Pro', sans-serif;
-      font-size: 15px; font-weight: 500;
-      color: var(--gray-900);
-      cursor: pointer;
-      text-align: left;
-      transition: all 0.18s;
+      padding: 18px 20px;
       box-shadow: var(--shadow-sm);
     }
-    .quiz-option:hover:not(:disabled) {
-      border-color: var(--blue-mid);
+    .quiz-type-label {
+      font-size: 12px; font-weight: 700; letter-spacing: 1px;
+      text-transform: uppercase; color: var(--gray-500);
+      margin-bottom: 12px;
+    }
+    .quiz-type-tabs {
+      display: flex; gap: 8px; flex-wrap: wrap;
+    }
+    .quiz-type-tab {
+      flex: 1; min-width: 120px;
+      padding: 10px 14px;
+      border-radius: var(--radius-sm);
+      border: 2px solid var(--blue-light);
       background: var(--blue-pale);
+      color: var(--blue-mid);
+      font-family: 'Be Vietnam Pro', sans-serif;
+      font-size: 13px; font-weight: 600;
+      cursor: pointer; text-align: center;
+      transition: all 0.18s;
+      display: flex; flex-direction: column; align-items: center; gap: 4px;
     }
-    .quiz-option.correct {
-      border-color: var(--green); background: #f0fdf4; color: #166534;
+    .quiz-type-tab .qt-icon { font-size: 20px; }
+    .quiz-type-tab .qt-name { font-size: 12px; font-weight: 700; }
+    .quiz-type-tab .qt-desc { font-size: 11px; opacity: 0.7; font-weight: 400; }
+    .quiz-type-tab:hover { border-color: var(--blue-mid); background: var(--white); }
+    .quiz-type-tab.active {
+      background: var(--blue-mid); border-color: var(--blue-mid);
+      color: #fff; box-shadow: 0 2px 8px rgba(37,99,235,0.3);
     }
-    .quiz-option.wrong {
-      border-color: var(--red); background: #fef2f2; color: #991b1b;
-    }
-    .quiz-option:disabled { cursor: default; }
+    .quiz-type-tab.active .qt-desc { opacity: 0.8; }
 
-    .quiz-score-row {
-      display: flex; gap: 12px; justify-content: center; flex-wrap: wrap;
-    }
+    /* ─── QUIZ COMMON ─── */
+    .quiz-score-row { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
     .score-pill {
       display: flex; align-items: center; gap: 6px;
-      padding: 8px 18px;
-      border-radius: 24px;
+      padding: 8px 18px; border-radius: 24px;
       font-size: 14px; font-weight: 600;
     }
     .score-pill.correct { background: #dcfce7; color: #166534; }
     .score-pill.wrong { background: #fee2e2; color: #991b1b; }
     .score-pill.total { background: var(--blue-pale); color: var(--blue-deep); }
 
-    .quiz-next-btn {
-      background: var(--blue-mid); color: #fff;
-      border: none; border-radius: 24px;
-      padding: 12px 32px;
+    /* ─── QUIZ TYPE A: Choose Vietnamese meaning (chữ Trung → chọn TV) ─── */
+    .quiz-question-card {
+      background: var(--white); border-radius: var(--radius);
+      padding: 32px; box-shadow: var(--shadow-md); text-align: center;
+    }
+    .quiz-q-label {
+      font-size: 11px; font-weight: 700; letter-spacing: 1px;
+      text-transform: uppercase; color: var(--blue-bright); margin-bottom: 16px;
+    }
+    .quiz-hanzi { font-family: 'Noto Serif SC', serif; font-size: 56px; font-weight: 700; color: var(--blue-deep); line-height: 1; margin-bottom: 8px; }
+    .quiz-pinyin { font-size: 18px; color: var(--gray-500); }
+    .quiz-meaning-prompt { font-size: 22px; font-weight: 700; color: var(--blue-deep); margin-bottom: 6px; }
+    .quiz-sub-prompt { font-size: 14px; color: var(--gray-500); }
+
+    .quiz-options {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 12px;
+    }
+    .quiz-option {
+      background: var(--white); border: 2px solid var(--blue-light);
+      border-radius: var(--radius-sm); padding: 16px 20px;
       font-family: 'Be Vietnam Pro', sans-serif;
-      font-size: 15px; font-weight: 600;
-      cursor: pointer; display: none;
-      margin: 0 auto;
-      transition: background 0.18s;
-      box-shadow: var(--shadow-md);
+      font-size: 15px; font-weight: 500; color: var(--gray-900);
+      cursor: pointer; text-align: left;
+      transition: all 0.18s; box-shadow: var(--shadow-sm);
+    }
+    .quiz-option.han { font-family: 'Noto Serif SC', serif; font-size: 22px; text-align: center; padding: 20px; }
+    .quiz-option:hover:not(:disabled) { border-color: var(--blue-mid); background: var(--blue-pale); }
+    .quiz-option.correct { border-color: var(--green); background: #f0fdf4; color: #166534; }
+    .quiz-option.wrong { border-color: var(--red); background: #fef2f2; color: #991b1b; }
+    .quiz-option:disabled { cursor: default; }
+
+    .quiz-next-btn {
+      background: var(--blue-mid); color: #fff; border: none; border-radius: 24px;
+      padding: 12px 32px; font-family: 'Be Vietnam Pro', sans-serif;
+      font-size: 15px; font-weight: 600; cursor: pointer; display: none;
+      margin: 0 auto; transition: background 0.18s; box-shadow: var(--shadow-md);
     }
     .quiz-next-btn:hover { background: var(--blue-deep); }
     .quiz-next-btn.show { display: block; }
 
+    /* ─── QUIZ TYPE C: Type Chinese ─── */
+    .quiz-type-input {
+      background: var(--white); border-radius: var(--radius);
+      padding: 28px; box-shadow: var(--shadow-md);
+    }
+    .typing-prompt { font-size: 26px; font-weight: 700; color: var(--blue-deep); text-align: center; margin-bottom: 6px; }
+    .typing-sub { font-size: 14px; color: var(--gray-500); text-align: center; margin-bottom: 20px; }
+
+    .typing-input-wrap {
+      display: flex; gap: 10px; align-items: center;
+    }
+    .typing-input {
+      flex: 1; padding: 14px 18px;
+      font-family: 'Noto Serif SC', serif;
+      font-size: 26px; text-align: center; letter-spacing: 4px;
+      border: 2px solid var(--blue-light); border-radius: var(--radius-sm);
+      outline: none; color: var(--blue-deep);
+      transition: border-color 0.18s;
+      background: var(--blue-pale);
+    }
+    .typing-input:focus { border-color: var(--blue-mid); background: var(--white); }
+    .typing-input.correct { border-color: var(--green); background: #f0fdf4; color: #166534; }
+    .typing-input.wrong-anim { border-color: var(--red); background: #fef2f2; animation: shake 0.35s ease; }
+    @keyframes shake {
+      0%,100% { transform: translateX(0); }
+      20% { transform: translateX(-8px); }
+      40% { transform: translateX(8px); }
+      60% { transform: translateX(-6px); }
+      80% { transform: translateX(6px); }
+    }
+
+    .typing-submit {
+      padding: 14px 24px; border-radius: var(--radius-sm);
+      background: var(--blue-mid); color: #fff; border: none;
+      font-family: 'Be Vietnam Pro', sans-serif;
+      font-size: 15px; font-weight: 600; cursor: pointer;
+      transition: background 0.18s; white-space: nowrap;
+    }
+    .typing-submit:hover { background: var(--blue-deep); }
+    .typing-submit:disabled { opacity: 0.5; cursor: default; }
+
+    .typing-feedback {
+      margin-top: 16px; padding: 14px 18px;
+      border-radius: var(--radius-sm); font-size: 15px; font-weight: 600;
+      display: none; align-items: center; gap: 10px;
+    }
+    .typing-feedback.show { display: flex; }
+    .typing-feedback.correct { background: #dcfce7; color: #166534; }
+    .typing-feedback.wrong { background: #fee2e2; color: #991b1b; }
+    .typing-feedback .feedback-answer { font-family: 'Noto Serif SC', serif; font-size: 20px; }
+
+    .typing-hint-btn {
+      background: transparent; border: 2px solid var(--yellow);
+      color: var(--yellow); border-radius: 24px;
+      padding: 6px 16px; font-size: 12px; font-weight: 600;
+      cursor: pointer; transition: all 0.18s;
+      font-family: 'Be Vietnam Pro', sans-serif;
+    }
+    .typing-hint-btn:hover { background: var(--yellow); color: #fff; }
+    .typing-hint { font-size: 13px; color: var(--gray-500); margin-top: 8px; text-align: center; min-height: 20px; }
+
+    /* ─── QUIZ RESULT ─── */
     .quiz-result {
-      background: var(--white);
-      border-radius: var(--radius);
-      padding: 32px;
-      text-align: center;
-      box-shadow: var(--shadow-md);
-      display: none;
+      background: var(--white); border-radius: var(--radius);
+      padding: 32px; text-align: center; box-shadow: var(--shadow-md); display: none;
     }
     .quiz-result.show { display: block; }
     .result-emoji { font-size: 48px; margin-bottom: 8px; }
     .result-title { font-size: 24px; font-weight: 700; color: var(--blue-deep); margin-bottom: 4px; }
     .result-sub { font-size: 15px; color: var(--gray-500); margin-bottom: 20px; }
     .result-restart {
-      background: var(--blue-mid); color: #fff;
-      border: none; border-radius: 24px;
-      padding: 12px 32px;
-      font-family: 'Be Vietnam Pro', sans-serif;
-      font-size: 15px; font-weight: 600;
-      cursor: pointer;
-      box-shadow: var(--shadow-md);
-      transition: background 0.18s;
+      background: var(--blue-mid); color: #fff; border: none; border-radius: 24px;
+      padding: 12px 32px; font-family: 'Be Vietnam Pro', sans-serif;
+      font-size: 15px; font-weight: 600; cursor: pointer;
+      box-shadow: var(--shadow-md); transition: background 0.18s;
     }
     .result-restart:hover { background: var(--blue-deep); }
 
-    /* ─── WORD LIST ─── */
-    #wordList {
-      display: none;
-      flex-direction: column;
-      gap: 8px;
-    }
+    /* ─── LIST MODE ─── */
+    #wordList { display: none; flex-direction: column; gap: 8px; }
     .word-card {
-      background: var(--white);
-      border-radius: var(--radius-sm);
-      padding: 14px 18px;
-      display: grid;
-      grid-template-columns: 60px 1fr 1fr 48px;
-      gap: 12px;
-      align-items: center;
-      box-shadow: var(--shadow-sm);
+      background: var(--white); border-radius: var(--radius-sm);
+      padding: 14px 18px; display: grid;
+      grid-template-columns: 60px 1fr 1fr 48px; gap: 12px;
+      align-items: center; box-shadow: var(--shadow-sm);
       border: 1px solid var(--gray-100);
-      transition: box-shadow 0.18s, border-color 0.18s;
-      cursor: default;
+      transition: box-shadow 0.18s, border-color 0.18s; cursor: default;
     }
-    .word-card:hover {
-      box-shadow: var(--shadow-md);
-      border-color: var(--blue-light);
-    }
-    .wc-hanzi {
-      font-family: 'Noto Serif SC', serif;
-      font-size: 26px; font-weight: 700;
-      color: var(--blue-deep); text-align: center;
-    }
+    .word-card:hover { box-shadow: var(--shadow-md); border-color: var(--blue-light); }
+    .wc-hanzi { font-family: 'Noto Serif SC', serif; font-size: 26px; font-weight: 700; color: var(--blue-deep); text-align: center; }
     .wc-center { display: flex; flex-direction: column; gap: 2px; }
     .wc-pinyin { font-size: 13px; color: var(--blue-mid); font-weight: 500; }
     .wc-nghia { font-size: 14px; font-weight: 600; color: var(--gray-900); }
     .wc-right { display: flex; flex-direction: column; gap: 2px; }
     .wc-vd { font-family: 'Noto Serif SC', serif; font-size: 13px; color: var(--gray-700); }
     .wc-dich { font-size: 12px; color: var(--gray-500); font-style: italic; }
+    .wc-speak { display: flex; flex-direction: column; align-items: center; gap: 4px; justify-content: center; }
+
+    /* ─── SPEAK BUTTONS ─── */
+    .speak-btn {
+      display: inline-flex; align-items: center; justify-content: center;
+      width: 38px; height: 38px; border-radius: 50%; border: none;
+      background: rgba(255,255,255,0.18); color: #fff;
+      font-size: 17px; cursor: pointer;
+      transition: background 0.18s, transform 0.15s; flex-shrink: 0;
+    }
+    .speak-btn:hover { background: rgba(255,255,255,0.32); transform: scale(1.12); }
+    .speak-btn.speaking { animation: pulse-speak 0.6s ease infinite alternate; }
+    @keyframes pulse-speak {
+      from { box-shadow: 0 0 0 0 rgba(255,255,255,0.5); }
+      to   { box-shadow: 0 0 0 8px rgba(255,255,255,0); }
+    }
+    .speak-btn.dark { background: var(--blue-pale); color: var(--blue-mid); }
+    .speak-btn.dark:hover { background: var(--blue-light); }
+    .speak-btn.dark.speaking { animation: pulse-speak-dark 0.6s ease infinite alternate; }
+    @keyframes pulse-speak-dark {
+      from { box-shadow: 0 0 0 0 rgba(37,99,235,0.4); }
+      to   { box-shadow: 0 0 0 8px rgba(37,99,235,0); }
+    }
+    .front-speak-row { display: flex; align-items: center; gap: 10px; }
+    .back-speak-row { display: flex; gap: 8px; margin-top: 6px; }
+    .back-speak-label { font-size: 11px; color: var(--gray-500); margin-bottom: 2px; }
+    .speak-group { display: flex; flex-direction: column; align-items: center; gap: 3px; }
+    .quiz-speak-wrap { display: flex; justify-content: center; margin-top: 8px; }
+    .quiz-speak-btn {
+      display: inline-flex; align-items: center; gap: 6px;
+      padding: 8px 20px; background: var(--blue-pale); color: var(--blue-mid);
+      border: 2px solid var(--blue-light); border-radius: 24px;
+      font-family: 'Be Vietnam Pro', sans-serif; font-size: 13px; font-weight: 600;
+      cursor: pointer; transition: all 0.18s;
+    }
+    .quiz-speak-btn:hover { background: var(--blue-light); }
 
     /* ─── RESPONSIVE ─── */
     @media (max-width: 600px) {
@@ -489,109 +474,33 @@
       .wc-right { display: none; }
       .mode-btn { padding: 7px 12px; font-size: 12px; }
       .hsk-tab { padding: 6px 12px; font-size: 12px; }
+      .quiz-type-tabs { flex-direction: column; }
+      .typing-input-wrap { flex-direction: column; }
+      .typing-input { font-size: 20px; }
     }
 
     .fade-in { animation: fadeIn 0.3s ease; }
     @keyframes fadeIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
 
-    /* ─── SPEAK BUTTON ─── */
-    .speak-btn {
-      display: inline-flex; align-items: center; justify-content: center;
-      width: 38px; height: 38px;
-      border-radius: 50%;
-      border: none;
-      background: rgba(255,255,255,0.18);
-      color: #fff;
-      font-size: 17px;
-      cursor: pointer;
-      transition: background 0.18s, transform 0.15s;
-      flex-shrink: 0;
-    }
-    .speak-btn:hover { background: rgba(255,255,255,0.32); transform: scale(1.12); }
-    .speak-btn.speaking { animation: pulse-speak 0.6s ease infinite alternate; }
-    @keyframes pulse-speak {
-      from { box-shadow: 0 0 0 0 rgba(255,255,255,0.5); }
-      to   { box-shadow: 0 0 0 8px rgba(255,255,255,0); }
-    }
-
-    /* Dark version for white backgrounds */
-    .speak-btn.dark {
-      background: var(--blue-pale);
-      color: var(--blue-mid);
-    }
-    .speak-btn.dark:hover { background: var(--blue-light); }
-    .speak-btn.dark.speaking { animation: pulse-speak-dark 0.6s ease infinite alternate; }
-    @keyframes pulse-speak-dark {
-      from { box-shadow: 0 0 0 0 rgba(37,99,235,0.4); }
-      to   { box-shadow: 0 0 0 8px rgba(37,99,235,0); }
-    }
-
-    /* Front card speak row */
-    .front-speak-row {
-      display: flex; align-items: center; gap: 10px;
-    }
-
-    /* Back card speak buttons row */
-    .back-speak-row {
-      display: flex; gap: 8px; margin-top: 6px;
-    }
-    .back-speak-label {
-      font-size: 11px; color: var(--gray-500); margin-bottom: 2px;
-    }
-    .speak-group { display: flex; flex-direction: column; align-items: center; gap: 3px; }
-
-    /* Quiz speak btn */
-    .quiz-speak-wrap {
-      display: flex; justify-content: center; margin-top: 8px;
-    }
-    .quiz-speak-btn {
-      display: inline-flex; align-items: center; gap: 6px;
-      padding: 8px 20px;
-      background: var(--blue-pale);
-      color: var(--blue-mid);
-      border: 2px solid var(--blue-light);
-      border-radius: 24px;
-      font-family: 'Be Vietnam Pro', sans-serif;
-      font-size: 13px; font-weight: 600;
-      cursor: pointer;
-      transition: all 0.18s;
-    }
-    .quiz-speak-btn:hover { background: var(--blue-light); }
-    .quiz-speak-btn.speaking { border-color: var(--blue-mid); }
-
-    /* List speak btn */
-    .wc-speak {
-      display: flex; flex-direction: column; align-items: center;
-      gap: 4px; justify-content: center;
-    }
-
-    /* TTS not supported notice */
     #ttsNotice {
-      background: #fff7ed;
-      border: 1px solid #fed7aa;
-      border-radius: var(--radius-sm);
-      padding: 10px 16px;
-      font-size: 13px; color: #92400e;
-      display: none; align-items: center; gap: 8px;
+      background: #fff7ed; border-bottom: 1px solid #fed7aa;
+      padding: 10px 24px; font-size: 13px; color: #92400e; display: none;
     }
   </style>
 </head>
 <body>
 
-<!-- Loading -->
 <div id="loadingScreen">
   <div class="spinner"></div>
   <div class="loading-text">Đang tải dữ liệu từ vựng...</div>
 </div>
 
-<!-- Error -->
-<div id="errorScreen" style="display:none;flex-direction:column;align-items:center;justify-content:center;gap:12px;position:fixed;inset:0;background:var(--blue-pale);">
-  <div class="error-icon">⚠️</div>
-  <div class="error-text">Không thể tải dữ liệu</div>
-  <div class="error-sub">Vui lòng kiểm tra file data.json và thử lại.</div>
+<div id="errorScreen" style="display:none;flex-direction:column;align-items:center;justify-content:center;gap:12px;position:fixed;inset:0;background:var(--blue-pale);z-index:999;">
+  <div style="font-size:48px">⚠️</div>
+  <div style="color:var(--red);font-weight:600;font-size:16px">Không thể tải dữ liệu</div>
+  <div style="color:var(--gray-500);font-size:13px">Vui lòng kiểm tra file data.json và thử lại.</div>
 </div>
 
-<!-- Header -->
 <header>
   <div class="logo">
     <div class="logo-icon">汉</div>
@@ -612,10 +521,11 @@
   </div>
 </header>
 
-<div id="ttsNotice" style="display:none;background:#fff7ed;border-bottom:1px solid #fed7aa;padding:10px 24px;font-size:13px;color:#92400e;">
-  ⚠️ Trình duyệt không hỗ trợ phát âm (Web Speech API). Hãy thử Chrome hoặc Edge để sử dụng tính năng này.
+<div id="ttsNotice">
+  ⚠️ Trình duyệt không hỗ trợ phát âm (Web Speech API). Hãy thử Chrome hoặc Edge.
 </div>
 
+<main>
   <!-- Controls -->
   <div class="controls-row">
     <div class="hsk-tabs" id="hskTabs">
@@ -646,21 +556,19 @@
     <span class="progress-count" id="progressCount">0 / 0</span>
   </div>
 
-  <!-- ═══════════ FLASHCARD MODE ═══════════ -->
+  <!-- ═══ FLASHCARD ═══ -->
   <div id="flashcardMode">
     <div class="card-scene" id="cardScene">
       <div class="card-inner" id="cardInner">
-        <!-- Front -->
         <div class="card-face card-front">
           <div class="card-hsk-badge" id="frontBadge">HSK1</div>
           <div class="hanzi" id="frontHanzi">—</div>
           <div class="front-speak-row">
             <div class="pinyin" id="frontPinyin">—</div>
-            <button class="speak-btn" id="speakFront" title="Phát âm từ này" onclick="event.stopPropagation(); speakText(filteredWords[currentIndex]?.tu, 'word')">🔊</button>
+            <button class="speak-btn" id="speakFront" title="Phát âm" onclick="event.stopPropagation(); speakText(filteredWords[currentIndex]?.tu, 'word')">🔊</button>
           </div>
           <div class="card-flip-hint">🖱️ Click để lật</div>
         </div>
-        <!-- Back -->
         <div class="card-face card-back">
           <div class="card-hsk-badge" id="backBadge">HSK1</div>
           <div class="pinyin" id="backPinyin">—</div>
@@ -668,11 +576,11 @@
           <div class="back-speak-row">
             <div class="speak-group">
               <span class="back-speak-label">Từ</span>
-              <button class="speak-btn dark" title="Phát âm từ" onclick="event.stopPropagation(); speakText(filteredWords[currentIndex]?.tu, 'word')">🔊</button>
+              <button class="speak-btn dark" onclick="event.stopPropagation(); speakText(filteredWords[currentIndex]?.tu, 'word')">🔊</button>
             </div>
             <div class="speak-group">
               <span class="back-speak-label">Ví dụ</span>
-              <button class="speak-btn dark" title="Phát âm câu ví dụ" onclick="event.stopPropagation(); speakText(filteredWords[currentIndex]?.vi_du_han, 'sentence')">🗣️</button>
+              <button class="speak-btn dark" onclick="event.stopPropagation(); speakText(filteredWords[currentIndex]?.vi_du_han, 'sentence')">🗣️</button>
             </div>
           </div>
           <div class="example-block">
@@ -684,13 +592,11 @@
         </div>
       </div>
     </div>
-
     <div class="card-controls">
-      <button class="card-btn" id="prevBtn" title="Trước">‹</button>
+      <button class="card-btn" id="prevBtn">‹</button>
       <span class="card-counter" id="cardCounter">1 / 1</span>
-      <button class="card-btn" id="nextBtn" title="Tiếp">›</button>
+      <button class="card-btn" id="nextBtn">›</button>
     </div>
-
     <div class="card-actions">
       <button class="action-btn shuffle" id="shuffleBtn">🔀 Xáo thẻ</button>
       <button class="action-btn flip-btn" id="flipBtn">↩️ Lật thẻ</button>
@@ -698,29 +604,82 @@
     </div>
   </div>
 
-  <!-- ═══════════ QUIZ MODE ═══════════ -->
+  <!-- ═══ QUIZ ═══ -->
   <div id="quizMode">
+    <!-- Quiz type selector -->
+    <div class="quiz-type-selector">
+      <div class="quiz-type-label">Chọn kiểu kiểm tra</div>
+      <div class="quiz-type-tabs">
+        <button class="quiz-type-tab active" data-qtype="choose-vi">
+          <span class="qt-icon">🇻🇳</span>
+          <span class="qt-name">Chọn nghĩa TV</span>
+          <span class="qt-desc">Thấy chữ Trung → chọn nghĩa tiếng Việt</span>
+        </button>
+        <button class="quiz-type-tab" data-qtype="choose-han">
+          <span class="qt-icon">汉</span>
+          <span class="qt-name">Chọn chữ Trung</span>
+          <span class="qt-desc">Thấy nghĩa TV → chọn chữ Hán đúng</span>
+        </button>
+        <button class="quiz-type-tab" data-qtype="type-han">
+          <span class="qt-icon">⌨️</span>
+          <span class="qt-name">Gõ chữ Trung</span>
+          <span class="qt-desc">Thấy nghĩa TV → gõ chữ Hán từ bàn phím</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Score row -->
     <div class="quiz-score-row">
       <div class="score-pill correct">✅ Đúng: <span id="qCorrect">0</span></div>
       <div class="score-pill wrong">❌ Sai: <span id="qWrong">0</span></div>
       <div class="score-pill total">📝 Tổng: <span id="qTotal">0</span></div>
     </div>
 
-    <div class="quiz-question-card" id="quizQCard">
-      <div class="quiz-q-label">Chọn nghĩa đúng</div>
-      <div class="quiz-hanzi" id="qHanzi">—</div>
-      <div class="quiz-pinyin" id="qPinyin">—</div>
-      <div class="quiz-speak-wrap">
-        <button class="quiz-speak-btn" id="quizSpeakBtn" onclick="speakText(quizWords[quizIdx]?.tu, 'word')">
-          🔊 Nghe phát âm
-        </button>
+    <!-- TYPE A & B: Multiple choice -->
+    <div id="quizChooseArea">
+      <div class="quiz-question-card" id="quizQCard">
+        <div class="quiz-q-label" id="quizQLabel">Chọn nghĩa đúng</div>
+        <div id="quizQuestionDisplay"></div>
+        <div class="quiz-speak-wrap">
+          <button class="quiz-speak-btn" id="quizSpeakBtn">🔊 Nghe phát âm</button>
+        </div>
       </div>
+      <div class="quiz-options" id="quizOptions"></div>
+      <button class="quiz-next-btn" id="quizNextBtn">Câu tiếp theo →</button>
     </div>
 
-    <div class="quiz-options" id="quizOptions"></div>
+    <!-- TYPE C: Type input -->
+    <div class="quiz-type-input" id="quizTypeArea" style="display:none">
+      <div class="typing-prompt" id="typingPrompt">—</div>
+      <div class="typing-sub" id="typingSub">Gõ chữ Hán tương ứng vào ô bên dưới</div>
 
-    <button class="quiz-next-btn" id="quizNextBtn">Câu tiếp theo →</button>
+      <div style="display:flex;justify-content:center;margin-bottom:10px;">
+        <button class="quiz-speak-btn" id="typingSpeakBtn">🔊 Nghe phát âm</button>
+      </div>
 
+      <div class="typing-input-wrap">
+        <input type="text" class="typing-input" id="typingInput"
+               placeholder="Nhập chữ Hán..." autocomplete="off" autocorrect="off" spellcheck="false">
+        <button class="typing-submit" id="typingSubmit">Kiểm tra</button>
+      </div>
+
+      <div class="typing-hint" id="typingHint"></div>
+
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-top:10px;">
+        <button class="typing-hint-btn" id="hintBtn">💡 Gợi ý (pinyin)</button>
+        <button class="typing-hint-btn" style="border-color:var(--gray-300);color:var(--gray-500);" id="skipBtn">⏭️ Bỏ qua</button>
+      </div>
+
+      <div class="typing-feedback" id="typingFeedback">
+        <span id="feedbackIcon">✅</span>
+        <span id="feedbackText"></span>
+        <span class="feedback-answer" id="feedbackAnswer"></span>
+      </div>
+
+      <button class="quiz-next-btn show" id="typingNextBtn" style="margin-top:16px;display:none">Câu tiếp theo →</button>
+    </div>
+
+    <!-- Result -->
     <div class="quiz-result" id="quizResult">
       <div class="result-emoji" id="resultEmoji">🎉</div>
       <div class="result-title" id="resultTitle">Xuất sắc!</div>
@@ -729,43 +688,39 @@
     </div>
   </div>
 
-  <!-- ═══════════ LIST MODE ═══════════ -->
+  <!-- ═══ LIST ═══ -->
   <div id="wordList"></div>
 </main>
 
 <script>
-  // ═══════════════════════════════════════════════════
-  //  STATE
-  // ═══════════════════════════════════════════════════
-  let vocabularyData = {};          // raw JSON
+  // ── STATE ──
+  let vocabularyData = {};
   let currentLevel   = 'HSK1';
-  let filteredWords  = [];          // words shown in current context
+  let filteredWords  = [];
   let currentIndex   = 0;
   let isFlipped      = false;
-  let currentMode    = 'flash';     // 'flash' | 'quiz' | 'list'
+  let currentMode    = 'flash';
   let searchTerm     = '';
 
-  // Quiz state
+  // Quiz
   let quizWords  = [];
   let quizIdx    = 0;
   let qCorrect   = 0;
   let qWrong     = 0;
   let answered   = false;
+  let quizType   = 'choose-vi'; // 'choose-vi' | 'choose-han' | 'type-han'
+  let hintShown  = false;
 
-  // TTS state
+  // TTS
   let ttsSupported = false;
-  let ttsChinese   = null;   // best zh voice found
-  let currentUtterance = null;
+  let ttsChinese   = null;
 
-  // ═══════════════════════════════════════════════════
-  //  LOAD DATA
-  // ═══════════════════════════════════════════════════
+  // ── LOAD DATA ──
   async function loadData() {
     try {
       const res = await fetch('./data.json');
       if (!res.ok) throw new Error('HTTP ' + res.status);
       vocabularyData = await res.json();
-
       document.getElementById('loadingScreen').style.display = 'none';
       initApp();
     } catch (err) {
@@ -775,9 +730,6 @@
     }
   }
 
-  // ═══════════════════════════════════════════════════
-  //  INIT
-  // ═══════════════════════════════════════════════════
   function initApp() {
     initTTS();
     setLevel('HSK1');
@@ -785,7 +737,6 @@
   }
 
   function bindEvents() {
-    // HSK tabs
     document.getElementById('hskTabs').addEventListener('click', e => {
       const btn = e.target.closest('.hsk-tab');
       if (!btn) return;
@@ -794,25 +745,22 @@
       setLevel(btn.dataset.level);
     });
 
-    // Mode toggle
     document.getElementById('modeFlash').addEventListener('click', () => setMode('flash'));
     document.getElementById('modeQuiz').addEventListener('click',  () => setMode('quiz'));
     document.getElementById('modeList').addEventListener('click',  () => setMode('list'));
 
-    // Search
     document.getElementById('searchInput').addEventListener('input', e => {
       searchTerm = e.target.value.toLowerCase().trim();
       applyFilter();
     });
 
-    // Flashcard controls
+    // Flashcard
     document.getElementById('cardScene').addEventListener('click', flipCard);
     document.getElementById('flipBtn').addEventListener('click', flipCard);
     document.getElementById('prevBtn').addEventListener('click', () => navigate(-1));
     document.getElementById('nextBtn').addEventListener('click', () => navigate(1));
     document.getElementById('shuffleBtn').addEventListener('click', shuffleCards);
 
-    // Keyboard
     document.addEventListener('keydown', e => {
       if (currentMode === 'flash') {
         if (e.key === 'ArrowLeft')  navigate(-1);
@@ -821,14 +769,41 @@
       }
     });
 
-    // Quiz
+    // Quiz type tabs
+    document.querySelectorAll('.quiz-type-tab').forEach(tab => {
+      tab.addEventListener('click', () => {
+        document.querySelectorAll('.quiz-type-tab').forEach(t => t.classList.remove('active'));
+        tab.classList.add('active');
+        quizType = tab.dataset.qtype;
+        startQuiz();
+      });
+    });
+
+    // Quiz navigation
     document.getElementById('quizNextBtn').addEventListener('click', nextQuizQuestion);
     document.getElementById('resultRestart').addEventListener('click', startQuiz);
+
+    // Type mode
+    document.getElementById('typingSubmit').addEventListener('click', checkTypingAnswer);
+    document.getElementById('typingNextBtn').addEventListener('click', nextQuizQuestion);
+    document.getElementById('typingInput').addEventListener('keydown', e => {
+      if (e.key === 'Enter') checkTypingAnswer();
+    });
+    document.getElementById('hintBtn').addEventListener('click', showHint);
+    document.getElementById('skipBtn').addEventListener('click', skipTyping);
+
+    // Speak buttons
+    document.getElementById('quizSpeakBtn').addEventListener('click', () => {
+      const w = quizWords[quizIdx];
+      if (w) speakText(w.tu, 'word');
+    });
+    document.getElementById('typingSpeakBtn').addEventListener('click', () => {
+      const w = quizWords[quizIdx];
+      if (w) speakText(w.tu, 'word');
+    });
   }
 
-  // ═══════════════════════════════════════════════════
-  //  LEVEL & FILTER
-  // ═══════════════════════════════════════════════════
+  // ── LEVEL & FILTER ──
   function setLevel(level) {
     currentLevel = level;
     searchTerm   = '';
@@ -839,19 +814,13 @@
 
   function applyFilter() {
     const words = vocabularyData[currentLevel] || [];
-    if (!searchTerm) {
-      filteredWords = [...words];
-    } else {
-      filteredWords = words.filter(w =>
-        (w.tu      || '').toLowerCase().includes(searchTerm) ||
-        (w.pinyin  || '').toLowerCase().includes(searchTerm) ||
-        (w.nghia   || '').toLowerCase().includes(searchTerm)
-      );
-    }
-
+    filteredWords = !searchTerm ? [...words] : words.filter(w =>
+      (w.tu     || '').toLowerCase().includes(searchTerm) ||
+      (w.pinyin || '').toLowerCase().includes(searchTerm) ||
+      (w.nghia  || '').toLowerCase().includes(searchTerm)
+    );
     currentIndex = 0;
     isFlipped    = false;
-
     if (currentMode === 'flash') renderFlashcard();
     if (currentMode === 'quiz')  startQuiz();
     if (currentMode === 'list')  renderList();
@@ -864,18 +833,16 @@
     document.getElementById('headerLevel').textContent = currentLevel;
   }
 
-  // ═══════════════════════════════════════════════════
-  //  MODE SWITCHING
-  // ═══════════════════════════════════════════════════
+  // ── MODE ──
   function setMode(mode) {
     currentMode = mode;
     document.getElementById('modeFlash').classList.toggle('active', mode === 'flash');
     document.getElementById('modeQuiz').classList.toggle('active',  mode === 'quiz');
     document.getElementById('modeList').classList.toggle('active',  mode === 'list');
 
-    document.getElementById('flashcardMode').style.display = mode === 'flash' ? 'flex'   : 'none';
-    document.getElementById('quizMode').style.display      = mode === 'quiz'  ? 'flex'   : 'none';
-    document.getElementById('wordList').style.display      = mode === 'list'  ? 'flex'   : 'none';
+    document.getElementById('flashcardMode').style.display = mode === 'flash' ? 'flex' : 'none';
+    document.getElementById('quizMode').style.display      = mode === 'quiz'  ? 'flex' : 'none';
+    document.getElementById('wordList').style.display      = mode === 'list'  ? 'flex' : 'none';
 
     if (mode === 'flash') { currentIndex = 0; isFlipped = false; renderFlashcard(); }
     if (mode === 'quiz')  startQuiz();
@@ -883,16 +850,12 @@
     updateProgress();
   }
 
-  // ═══════════════════════════════════════════════════
-  //  PROGRESS BAR
-  // ═══════════════════════════════════════════════════
+  // ── PROGRESS ──
   function updateProgress() {
     const total = filteredWords.length;
     let current = 0;
-
     if (currentMode === 'flash') current = total ? currentIndex + 1 : 0;
     if (currentMode === 'quiz')  current = quizIdx;
-
     const pct = total ? Math.round((current / total) * 100) : 0;
     document.getElementById('progressFill').style.width  = pct + '%';
     document.getElementById('progressCount').textContent = total ? `${current} / ${total}` : '0 / 0';
@@ -901,18 +864,12 @@
       currentMode === 'quiz'  ? 'Câu hỏi'      : 'Từ vựng';
   }
 
-  // ═══════════════════════════════════════════════════
-  //  FLASHCARD
-  // ═══════════════════════════════════════════════════
+  // ── FLASHCARD ──
   function renderFlashcard() {
     const w = filteredWords[currentIndex];
     if (!w) { clearFlashcard(); return; }
-
-    // Snap back before re-rendering
-    const scene = document.getElementById('cardScene');
-    scene.classList.remove('flipped');
+    document.getElementById('cardScene').classList.remove('flipped');
     isFlipped = false;
-
     document.getElementById('frontBadge').textContent   = currentLevel;
     document.getElementById('backBadge').textContent    = currentLevel;
     document.getElementById('frontHanzi').textContent   = w.tu      || '—';
@@ -922,12 +879,10 @@
     document.getElementById('backVdHan').textContent    = w.vi_du_han    || '';
     document.getElementById('backVdPinyin').textContent = w.vi_du_pinyin || '';
     document.getElementById('backDich').textContent     = w.dich         || '';
-
     const total = filteredWords.length;
     document.getElementById('cardCounter').textContent  = `${currentIndex + 1} / ${total}`;
     document.getElementById('prevBtn').disabled = currentIndex === 0;
     document.getElementById('nextBtn').disabled = currentIndex === total - 1;
-
     updateProgress();
   }
 
@@ -955,88 +910,190 @@
       const j = Math.floor(Math.random() * (i + 1));
       [filteredWords[i], filteredWords[j]] = [filteredWords[j], filteredWords[i]];
     }
-    currentIndex = 0;
-    isFlipped    = false;
+    currentIndex = 0; isFlipped = false;
     renderFlashcard();
   }
 
-  // ═══════════════════════════════════════════════════
-  //  QUIZ
-  // ═══════════════════════════════════════════════════
+  // ── QUIZ ──
+  function shuffle(arr) {
+    const a = [...arr];
+    for (let i = a.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [a[i], a[j]] = [a[j], a[i]];
+    }
+    return a;
+  }
+
   function startQuiz() {
     quizWords = shuffle([...filteredWords]);
-    quizIdx   = 0;
-    qCorrect  = 0;
-    qWrong    = 0;
-    answered  = false;
+    quizIdx   = 0; qCorrect = 0; qWrong = 0; answered = false;
 
     document.getElementById('quizResult').classList.remove('show');
-    document.getElementById('quizQCard').style.display    = 'block';
-    document.getElementById('quizOptions').style.display  = 'grid';
     document.getElementById('quizNextBtn').classList.remove('show');
+    document.getElementById('typingNextBtn').style.display = 'none';
 
     updateScoreDisplay();
+    showQuizArea();
     renderQuizQuestion();
   }
 
-  function shuffle(arr) {
-    for (let i = arr.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1));
-      [arr[i], arr[j]] = [arr[j], arr[i]];
-    }
-    return arr;
+  function showQuizArea() {
+    const isType = quizType === 'type-han';
+    document.getElementById('quizChooseArea').style.display = isType ? 'none'  : 'block';
+    document.getElementById('quizTypeArea').style.display   = isType ? 'block' : 'none';
+    document.getElementById('quizQCard').style.display    = 'block';
+    document.getElementById('quizOptions').style.display  = 'grid';
+    document.getElementById('quizResult').classList.remove('show');
   }
 
   function renderQuizQuestion() {
-    if (!quizWords.length) { showQuizResult(); return; }
-    if (quizIdx >= quizWords.length) { showQuizResult(); return; }
+    if (!quizWords.length || quizIdx >= quizWords.length) { showQuizResult(); return; }
 
     const w = quizWords[quizIdx];
-    document.getElementById('qHanzi').textContent  = w.tu     || '—';
-    document.getElementById('qPinyin').textContent = w.pinyin || '—';
+    answered = false;
+    hintShown = false;
+    document.getElementById('quizNextBtn').classList.remove('show');
+    document.getElementById('typingNextBtn').style.display = 'none';
 
-    // Build 4 options (1 correct + 3 random wrong)
+    if (quizType === 'choose-vi') {
+      // Show Chinese → choose Vietnamese
+      document.getElementById('quizQLabel').textContent = 'Chọn nghĩa tiếng Việt đúng';
+      document.getElementById('quizQuestionDisplay').innerHTML = `
+        <div class="quiz-hanzi">${w.tu || '—'}</div>
+        <div class="quiz-pinyin">${w.pinyin || ''}</div>
+      `;
+      document.getElementById('quizSpeakBtn').style.display = 'inline-flex';
+      buildChoiceOptions(w, 'nghia', false);
+
+    } else if (quizType === 'choose-han') {
+      // Show Vietnamese → choose Chinese
+      document.getElementById('quizQLabel').textContent = 'Chọn chữ Hán đúng';
+      document.getElementById('quizQuestionDisplay').innerHTML = `
+        <div class="quiz-meaning-prompt">${w.nghia || '—'}</div>
+        <div class="quiz-sub-prompt">${w.pinyin ? '(pinyin: ' + w.pinyin + ')' : ''}</div>
+      `;
+      document.getElementById('quizSpeakBtn').style.display = 'inline-flex';
+      buildChoiceOptions(w, 'tu', true);
+
+    } else if (quizType === 'type-han') {
+      // Show Vietnamese → type Chinese
+      document.getElementById('typingPrompt').textContent = w.nghia || '—';
+      document.getElementById('typingSub').textContent = 'Gõ chữ Hán tương ứng vào ô bên dưới';
+      const input = document.getElementById('typingInput');
+      input.value = '';
+      input.className = 'typing-input';
+      input.disabled = false;
+      document.getElementById('typingSubmit').disabled = false;
+      document.getElementById('typingHint').textContent = '';
+      document.getElementById('typingFeedback').className = 'typing-feedback';
+      document.getElementById('hintBtn').disabled = false;
+      document.getElementById('skipBtn').disabled = false;
+      setTimeout(() => input.focus(), 50);
+    }
+    updateProgress();
+  }
+
+  function buildChoiceOptions(correctWord, field, isHan) {
     const allWords = vocabularyData[currentLevel] || [];
-    const wrong = shuffle(allWords.filter(x => x.nghia !== w.nghia)).slice(0, 3);
-    const options = shuffle([w, ...wrong]);
+    const wrong = shuffle(allWords.filter(x => x[field] !== correctWord[field])).slice(0, 3);
+    const options = shuffle([correctWord, ...wrong]);
 
     const container = document.getElementById('quizOptions');
     container.innerHTML = '';
     options.forEach(opt => {
       const btn = document.createElement('button');
-      btn.className  = 'quiz-option';
-      btn.textContent = opt.nghia || '—';
-      btn.addEventListener('click', () => answerQuiz(btn, opt.nghia === w.nghia));
+      btn.className = 'quiz-option' + (isHan ? ' han' : '');
+      btn.textContent = opt[field] || '—';
+      btn.addEventListener('click', () => answerChoice(btn, opt[field] === correctWord[field]));
       container.appendChild(btn);
     });
-
-    answered = false;
-    document.getElementById('quizNextBtn').classList.remove('show');
-    updateProgress();
   }
 
-  function answerQuiz(btn, isCorrect) {
+  function answerChoice(btn, isCorrect) {
     if (answered) return;
     answered = true;
-
-    // Mark all options
-    document.querySelectorAll('.quiz-option').forEach(b => {
-      b.disabled = true;
-    });
-
+    document.querySelectorAll('.quiz-option').forEach(b => b.disabled = true);
     btn.classList.add(isCorrect ? 'correct' : 'wrong');
 
     if (!isCorrect) {
-      // Highlight correct answer
+      const w = quizWords[quizIdx];
+      const field = quizType === 'choose-han' ? 'tu' : 'nghia';
       document.querySelectorAll('.quiz-option').forEach(b => {
-        const w = quizWords[quizIdx];
-        if (b.textContent === w.nghia) b.classList.add('correct');
+        if (b.textContent === (w[field] || '—')) b.classList.add('correct');
       });
     }
-
     if (isCorrect) qCorrect++; else qWrong++;
     updateScoreDisplay();
     document.getElementById('quizNextBtn').classList.add('show');
+  }
+
+  function checkTypingAnswer() {
+    if (answered) return;
+    const w = quizWords[quizIdx];
+    const input = document.getElementById('typingInput');
+    const userAnswer = input.value.trim();
+    if (!userAnswer) return;
+
+    const correct = (w.tu || '').trim();
+    const isCorrect = userAnswer === correct;
+
+    answered = true;
+    input.disabled = true;
+    document.getElementById('typingSubmit').disabled = true;
+    document.getElementById('hintBtn').disabled = true;
+    document.getElementById('skipBtn').disabled = true;
+
+    const feedback = document.getElementById('typingFeedback');
+    const icon     = document.getElementById('feedbackIcon');
+    const text     = document.getElementById('feedbackText');
+    const ans      = document.getElementById('feedbackAnswer');
+
+    if (isCorrect) {
+      input.className = 'typing-input correct';
+      icon.textContent = '✅';
+      text.textContent = 'Chính xác! ';
+      ans.textContent  = '';
+      feedback.className = 'typing-feedback correct show';
+      qCorrect++;
+    } else {
+      input.className = 'typing-input wrong-anim';
+      setTimeout(() => input.classList.remove('wrong-anim'), 400);
+      icon.textContent = '❌';
+      text.textContent = 'Đáp án đúng: ';
+      ans.textContent  = correct;
+      feedback.className = 'typing-feedback wrong show';
+      qWrong++;
+    }
+    updateScoreDisplay();
+    document.getElementById('typingNextBtn').style.display = 'block';
+  }
+
+  function showHint() {
+    if (hintShown) return;
+    const w = quizWords[quizIdx];
+    document.getElementById('typingHint').textContent = w.pinyin ? `Pinyin: ${w.pinyin}` : 'Không có gợi ý';
+    hintShown = true;
+    document.getElementById('hintBtn').disabled = true;
+  }
+
+  function skipTyping() {
+    if (answered) return;
+    const w = quizWords[quizIdx];
+    const input = document.getElementById('typingInput');
+    answered = true;
+    input.disabled = true;
+    document.getElementById('typingSubmit').disabled = true;
+    document.getElementById('hintBtn').disabled = true;
+    document.getElementById('skipBtn').disabled = true;
+
+    const feedback = document.getElementById('typingFeedback');
+    document.getElementById('feedbackIcon').textContent = '⏭️';
+    document.getElementById('feedbackText').textContent = 'Đáp án: ';
+    document.getElementById('feedbackAnswer').textContent = w.tu || '—';
+    feedback.className = 'typing-feedback wrong show';
+    qWrong++;
+    updateScoreDisplay();
+    document.getElementById('typingNextBtn').style.display = 'block';
   }
 
   function nextQuizQuestion() {
@@ -1056,17 +1113,17 @@
   }
 
   function showQuizResult() {
-    document.getElementById('quizQCard').style.display   = 'none';
-    document.getElementById('quizOptions').style.display = 'none';
+    document.getElementById('quizChooseArea').style.display = 'none';
+    document.getElementById('quizTypeArea').style.display   = 'none';
     document.getElementById('quizNextBtn').classList.remove('show');
     document.getElementById('quizResult').classList.add('show');
 
     const pct = quizWords.length ? Math.round((qCorrect / quizWords.length) * 100) : 0;
     let emoji = '😊', title = 'Không tệ!';
-    if (pct === 100) { emoji = '🏆'; title = 'Hoàn hảo!'; }
-    else if (pct >= 80) { emoji = '🎉'; title = 'Xuất sắc!'; }
-    else if (pct >= 60) { emoji = '👍'; title = 'Khá tốt!'; }
-    else if (pct < 40) { emoji = '📚'; title = 'Cần luyện thêm!'; }
+    if (pct === 100)     { emoji = '🏆'; title = 'Hoàn hảo!'; }
+    else if (pct >= 80)  { emoji = '🎉'; title = 'Xuất sắc!'; }
+    else if (pct >= 60)  { emoji = '👍'; title = 'Khá tốt!'; }
+    else if (pct < 40)   { emoji = '📚'; title = 'Cần luyện thêm!'; }
 
     document.getElementById('resultEmoji').textContent = emoji;
     document.getElementById('resultTitle').textContent = title;
@@ -1074,18 +1131,14 @@
       `Bạn đúng ${qCorrect}/${quizWords.length} câu (${pct}%)`;
   }
 
-  // ═══════════════════════════════════════════════════
-  //  LIST MODE
-  // ═══════════════════════════════════════════════════
+  // ── LIST ──
   function renderList() {
     const container = document.getElementById('wordList');
     container.innerHTML = '';
-
     if (!filteredWords.length) {
       container.innerHTML = '<div style="text-align:center;color:var(--gray-500);padding:32px;">Không tìm thấy từ vựng nào.</div>';
       return;
     }
-
     filteredWords.forEach(w => {
       const card = document.createElement('div');
       card.className = 'word-card fade-in';
@@ -1104,7 +1157,7 @@
         <div class="wc-speak">
           <button class="speak-btn dark" title="Phát âm từ"
             onclick="speakText('${safeHan}', 'word', this)">🔊</button>
-          ${w.vi_du_han ? `<button class="speak-btn dark" title="Phát âm câu ví dụ"
+          ${w.vi_du_han ? `<button class="speak-btn dark" title="Phát âm ví dụ"
             onclick="speakText('${safeVd}', 'sentence', this)">🗣️</button>` : ''}
         </div>
       `;
@@ -1112,81 +1165,42 @@
     });
   }
 
-  // ═══════════════════════════════════════════════════
-  //  TEXT-TO-SPEECH ENGINE
-  // ═══════════════════════════════════════════════════
-
+  // ── TTS ──
   function initTTS() {
     if (!('speechSynthesis' in window)) {
       document.getElementById('ttsNotice').style.display = 'block';
       return;
     }
     ttsSupported = true;
-
-    // Try to find a Mandarin Chinese voice
     function findVoice() {
       const voices = window.speechSynthesis.getVoices();
-      // Priority: zh-CN > zh-TW > any zh
       ttsChinese =
         voices.find(v => v.lang === 'zh-CN') ||
         voices.find(v => v.lang === 'zh-TW') ||
-        voices.find(v => v.lang.startsWith('zh')) ||
-        null;
+        voices.find(v => v.lang.startsWith('zh')) || null;
     }
-
     findVoice();
-    // Voices load async on some browsers
     if (window.speechSynthesis.onvoiceschanged !== undefined) {
       window.speechSynthesis.onvoiceschanged = findVoice;
     }
   }
 
-  /**
-   * Speak Chinese text.
-   * @param {string} text   - Chinese characters to speak
-   * @param {string} type   - 'word' | 'sentence' (affects rate)
-   * @param {HTMLElement} [btn] - optional button to animate
-   */
   function speakText(text, type = 'word', btn = null) {
     if (!ttsSupported || !text) return;
-
-    // Cancel any ongoing speech
     window.speechSynthesis.cancel();
-
     const utter = new SpeechSynthesisUtterance(text);
     utter.lang  = ttsChinese ? ttsChinese.lang : 'zh-CN';
     if (ttsChinese) utter.voice = ttsChinese;
     utter.rate   = type === 'word' ? 0.85 : 0.9;
     utter.pitch  = 1.0;
     utter.volume = 1.0;
-
-    // Animate active speak button
-    const activeBtns = btn
-      ? [btn]
-      : [...document.querySelectorAll('.speak-btn.speaking, .quiz-speak-btn.speaking')];
-
-    function setSpeaking(els, on) {
-      els.forEach(el => {
-        if (on) el.classList.add('speaking');
-        else    el.classList.remove('speaking');
-      });
-    }
-
-    // Find all relevant buttons for this speak call
-    const allSpeak = [...document.querySelectorAll('.speak-btn, .quiz-speak-btn')];
-    setSpeaking(allSpeak, false);
-
+    document.querySelectorAll('.speak-btn.speaking, .quiz-speak-btn.speaking').forEach(el => el.classList.remove('speaking'));
     utter.onstart = () => { if (btn) btn.classList.add('speaking'); };
     utter.onend   = () => { if (btn) btn.classList.remove('speaking'); };
     utter.onerror = () => { if (btn) btn.classList.remove('speaking'); };
-
-    currentUtterance = utter;
     window.speechSynthesis.speak(utter);
   }
 
-  // ═══════════════════════════════════════════════════
-  //  BOOT
-  // ═══════════════════════════════════════════════════
   loadData();
 </script>
 </body>
