@@ -195,7 +195,7 @@
             "pinyin": "dú",
             "nghia": "đọc",
             "vi_du_han": "她在读书。",
-            "vi_du_pinyin": NaN,
+            "vi_du_pinyin": "",
             "dich": "Cô ấy đọc sách rất nhanh."
         },
         {
@@ -20355,7 +20355,7 @@
             "nghia": "tính chất",
             "vi_du_han": "这件事的性质很特殊。",
             "vi_du_pinyin": "Zhè jiàn shì de xìngzhì hěn tèshū.",
-            "dich": NaN
+            "dich": ""
         },
         {
             "STT": 1068,
